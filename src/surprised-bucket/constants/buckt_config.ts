@@ -1,0 +1,1 @@
+export const MAX_SURPRISED_BUCKET_IMAGE_LIMIT = 4;
