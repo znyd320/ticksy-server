@@ -30,7 +30,7 @@ export function getDefaultDbConnectionString(): string {
 
   let hostPart = config.get(DB_HOST) || 'localhost';
   let portPart = config.get(DB_PORT);
-  if (portPart) {
+  if (!!portPart) {
     portPart = `:${portPart}`;
   } else {
     portPart = '';
